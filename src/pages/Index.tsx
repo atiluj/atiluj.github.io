@@ -51,7 +51,7 @@ const Index = () => {
             whileHover={{ rotate: [0, -5, 5, -5, 0], transition: { duration: 0.5 } }}
           >
             <img 
-              src="/mandarin-logo.svg" 
+              src="/mandarin-logo.png" 
               alt="Mandarynek Logo" 
               className="w-32 h-32 md:w-44 md:h-44 animate-float"
             />
@@ -70,8 +70,9 @@ const Index = () => {
             variants={itemVariants}
           >
             <p className="text-lg md:text-xl text-mandarin-950 leading-relaxed">
-              Cześć! Już niedługo pojawi się tutaj pełna wersja sklepu! 🧡
-              Nasza strona jest jeszcze w budowie, ale już teraz możesz zamówić unikalne chińskie i japońskie zwoje z ręcznie wykonaną kaligrafią. ✨
+              Cześć! <br>
+              🧡 Już niedługo pojawi się tutaj pełna wersja sklepu! 🧡 <br>
+              Nasza strona jest jeszcze w budowie, ale już teraz możesz zamówić unikalne chińskie i japońskie zwoje z ręcznie wykonaną kaligrafią. ✨ <br>
               Jeśli jesteś zainteresowany/a, napisz do mnie:
             </p>
             
