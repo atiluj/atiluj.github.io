@@ -69,14 +69,16 @@ const Index = () => {
             variants={itemVariants}
           >
             <p className="text-lg md:text-xl text-mandarin-950 leading-relaxed">
-              Hi! The website is still under construction. If you're interested in our offer or want to order a personalized calligraphy piece, contact me at:
+              Cześć! Już niedługo pojawi się tutaj pełna wersja sklepu! 🧡
+              Nasza strona jest jeszcze w budowie, ale już teraz możesz zamówić unikalne chińskie i japońskie zwoje z ręcznie wykonaną kaligrafią. ✨
+              Jeśli jesteś zainteresowany/a, napisz do mnie:
             </p>
             
             <a 
-              href="mailto:mandarynka.kaligrafia@gmail.com" 
+              href="mailto: mandarynka.kaligrafia@gmail.com" 
               className="inline-block mt-4 text-mandarin-600 font-medium text-lg md:text-xl hover:text-mandarin-700 transition-colors underline decoration-mandarin-300 underline-offset-4 hover:decoration-mandarin-500"
             >
-              mandarynka.kaligrafia@gmail.com
+              📧 mandarynka.kaligrafia@gmail.com 📧
             </a>
           </motion.div>
 
