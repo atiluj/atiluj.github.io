@@ -91,34 +91,6 @@ const Index = () => {
             <div className="h-[1px] w-12 bg-mandarin-300"></div>
           </motion.div>
 
-          <motion.div 
-            className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6"
-            variants={itemVariants}
-          >
-            <Button 
-              variant="outline" 
-              className="mandarin-blur text-mandarin-800 font-medium p-6 h-auto flex flex-col gap-2 hover:scale-105 transition-transform"
-            >
-              <Gallery className="h-6 w-6 text-mandarin-600" />
-              <span>Gallery</span>
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              className="mandarin-blur text-mandarin-800 font-medium p-6 h-auto flex flex-col gap-2 hover:scale-105 transition-transform"
-            >
-              <ScrollText className="h-6 w-6 text-mandarin-600" />
-              <span>Options of materials</span>
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              className="mandarin-blur text-mandarin-800 font-medium p-6 h-auto flex flex-col gap-2 hover:scale-105 transition-transform"
-            >
-              <UserRound className="h-6 w-6 text-mandarin-600" />
-              <span>About me</span>
-            </Button>
-          </motion.div>
         </motion.div>
       </div>
     </div>
