@@ -69,8 +69,9 @@ const Index = () => {
             variants={itemVariants}
           >
             <p className="text-lg md:text-xl text-mandarin-950 leading-relaxed">
-              Cześć! Już niedługo pojawi się tutaj pełna wersja sklepu! 🧡
-              Nasza strona jest jeszcze w budowie, ale już teraz możesz zamówić unikalne chińskie i japońskie zwoje z ręcznie wykonaną kaligrafią. ✨
+              Cześć! &nbsp;
+              🧡 Już niedługo pojawi się tutaj pełna wersja sklepu! 🧡 &nbsp;
+              Nasza strona jest jeszcze w budowie, ale już teraz możesz zamówić unikalne chińskie i japońskie zwoje z ręcznie wykonaną kaligrafią. ✨ &nbsp;
               Jeśli jesteś zainteresowany/a, napisz do mnie:
             </p>
             
