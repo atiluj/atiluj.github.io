@@ -1,8 +1,9 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Gallery, ScrollText, UserRound } from 'lucide-react';
+import { ScrollText, UserRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import * as React from "react"
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
