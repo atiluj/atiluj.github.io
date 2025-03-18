@@ -1,6 +1,8 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Gallery, ScrollText, UserRound } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -91,14 +93,29 @@ const Index = () => {
             className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6"
             variants={itemVariants}
           >
-            {['Elegance', 'Tradition', 'Craftsmanship'].map((value, index) => (
-              <div 
-                key={index} 
-                className="mandarin-blur rounded-xl px-6 py-4 text-center transform hover:scale-105 transition-transform"
-              >
-                <p className="text-mandarin-800 font-medium">{value}</p>
-              </div>
-            ))}
+            <Button 
+              variant="outline" 
+              className="mandarin-blur text-mandarin-800 font-medium p-6 h-auto flex flex-col gap-2 hover:scale-105 transition-transform"
+            >
+              <Gallery className="h-6 w-6 text-mandarin-600" />
+              <span>Gallery</span>
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              className="mandarin-blur text-mandarin-800 font-medium p-6 h-auto flex flex-col gap-2 hover:scale-105 transition-transform"
+            >
+              <ScrollText className="h-6 w-6 text-mandarin-600" />
+              <span>Options of materials</span>
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              className="mandarin-blur text-mandarin-800 font-medium p-6 h-auto flex flex-col gap-2 hover:scale-105 transition-transform"
+            >
+              <UserRound className="h-6 w-6 text-mandarin-600" />
+              <span>About me</span>
+            </Button>
           </motion.div>
         </motion.div>
       </div>
