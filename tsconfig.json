@@ -1,23 +1,19 @@
 {
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
-    "target": "ES5",  // Kompilacja do ES5 dla lepszej kompatybilności z GitHub Pages.
-    "module": "ESNext",  // Używanie modułów ESNext.
-    "jsx": "react",  // Obsługa JSX w React.
-    "outDir": "./dist",  // Pliki wynikowe będą w folderze dist.
-    "esModuleInterop": true,
-    "moduleResolution": "node",  // Standardowa metoda rozwiązywania modułów.
-    "noEmit": false,  // Zapewnia, że pliki będą emitowane.
-    "skipLibCheck": true,
-    "allowJs": true,  // Zezwolenie na importowanie plików JS.
-    "strictNullChecks": false,
-    "noUnusedLocals": false,
+    "noImplicitAny": false,
     "noUnusedParameters": false,
-    "allowImportingTsExtensions": false
-  },
-  "include": ["src/**/*"],  // Kompilowanie wszystkich plików w katalogu src
-  "exclude": ["node_modules"]  // Pomijanie katalogu node_modules
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": false
+  }
 }
