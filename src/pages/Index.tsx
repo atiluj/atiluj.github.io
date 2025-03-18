@@ -50,7 +50,7 @@ const Index = () => {
             whileHover={{ rotate: [0, -5, 5, -5, 0], transition: { duration: 0.5 } }}
           >
             <img 
-              src="/mandarin-logo.svg" 
+              src="/mandarin-logo.png" 
               alt="Mandarynek Logo" 
               className="w-32 h-32 md:w-44 md:h-44 animate-float"
             />
