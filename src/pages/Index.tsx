@@ -82,11 +82,11 @@ const Index = () => {
           </motion.div>
 
           <motion.div 
-            className="mt-16 flex items-center w-full max-w-md"
+            className="mt-16 flex items-center w-full max-w-md mx-auto px-4"
             variants={itemVariants}
           >
             <Separator className="flex-grow bg-mandarin-300" />
-            <span className="px-4 text-mandarin-700 font-medium">Handmade Calligraphy</span>
+            <span className="px-4 text-mandarin-700 font-medium whitespace-nowrap">Handmade Calligraphy</span>
             <Separator className="flex-grow bg-mandarin-300" />
           </motion.div>
         </motion.div>
