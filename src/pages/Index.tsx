@@ -1,7 +1,6 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Separator } from '@/components/ui/separator';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -82,12 +81,12 @@ const Index = () => {
           </motion.div>
 
           <motion.div 
-            className="mt-16 flex items-center w-full max-w-md mx-auto px-4"
+            className="mt-16 text-center"
             variants={itemVariants}
           >
-            <Separator className="flex-grow bg-mandarin-300" />
-            <span className="px-4 text-mandarin-700 font-medium whitespace-nowrap">Handmade Calligraphy</span>
-            <Separator className="flex-grow bg-mandarin-300" />
+            <p className="text-mandarin-700 font-medium text-lg">
+              Handmade Calligraphy
+            </p>
           </motion.div>
         </motion.div>
       </div>
