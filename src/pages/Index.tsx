@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Gallery, ScrollText, UserRound } from 'lucide-react';
+import { ImageIcon, PencilRuler, UserRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -47,7 +47,6 @@ const Index = () => {
           <motion.div 
             className="relative"
             variants={itemVariants}
-            whileHover={{ rotate: [0, -5, 5, -5, 0], transition: { duration: 0.5 } }}
           >
             <img 
               src="/mandarin-logo.png" 
@@ -84,14 +83,31 @@ const Index = () => {
           </motion.div>
 
           <motion.div 
-            className="mt-16 flex gap-2 items-center"
+            className="mt-12 flex flex-wrap gap-4 justify-center"
             variants={itemVariants}
           >
-            <div className="h-[1px] w-12 bg-mandarin-300"></div>
-            <p className="text-mandarin-700 text-sm font-medium">Handmade Calligraphy</p>
-            <div className="h-[1px] w-12 bg-mandarin-300"></div>
+            <Button 
+              className="flex items-center gap-2 bg-mandarin-600 hover:bg-mandarin-700"
+              size="lg"
+            >
+              <ImageIcon size={20} />
+              Gallery
+            </Button>
+            <Button 
+              className="flex items-center gap-2 bg-mandarin-600 hover:bg-mandarin-700"
+              size="lg"
+            >
+              <PencilRuler size={20} />
+              Options of materials
+            </Button>
+            <Button 
+              className="flex items-center gap-2 bg-mandarin-600 hover:bg-mandarin-700"
+              size="lg"
+            >
+              <UserRound size={20} />
+              About me
+            </Button>
           </motion.div>
-
         </motion.div>
       </div>
     </div>
