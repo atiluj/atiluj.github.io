@@ -1,8 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ImageIcon, PencilRuler, UserRound } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -83,30 +82,12 @@ const Index = () => {
           </motion.div>
 
           <motion.div 
-            className="mt-12 flex flex-wrap gap-4 justify-center"
+            className="mt-16 flex items-center w-full max-w-md"
             variants={itemVariants}
           >
-            <Button 
-              className="flex items-center gap-2 bg-mandarin-600 hover:bg-mandarin-700"
-              size="lg"
-            >
-              <ImageIcon size={20} />
-              Gallery
-            </Button>
-            <Button 
-              className="flex items-center gap-2 bg-mandarin-600 hover:bg-mandarin-700"
-              size="lg"
-            >
-              <PencilRuler size={20} />
-              Options of materials
-            </Button>
-            <Button 
-              className="flex items-center gap-2 bg-mandarin-600 hover:bg-mandarin-700"
-              size="lg"
-            >
-              <UserRound size={20} />
-              About me
-            </Button>
+            <Separator className="flex-grow bg-mandarin-300" />
+            <span className="px-4 text-mandarin-700 font-medium">Handmade Calligraphy</span>
+            <Separator className="flex-grow bg-mandarin-300" />
           </motion.div>
         </motion.div>
       </div>
